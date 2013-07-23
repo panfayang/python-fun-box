@@ -1,5 +1,5 @@
 """
-Arrange an integer's digits so it returns the largest choice
+Rearrange an integer's digits so it returns the largest number with same digits
 """
 
 def biggerInt():
