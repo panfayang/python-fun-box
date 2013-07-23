@@ -1,3 +1,7 @@
+"""
+Arrange an integer's digits so it returns the largest choice
+"""
+
 def biggerInt():
   number = raw_input("Please enter a positive integer")
 	
