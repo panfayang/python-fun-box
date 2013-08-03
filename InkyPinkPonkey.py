@@ -1,4 +1,3 @@
-## Problem 1:
 """
 Welcome to the game of inkyPinkyPonkey!
 Assume there is a chant of k words, and there are n kids sitting in a circle.
