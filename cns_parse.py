@@ -1,11 +1,11 @@
-# import csv
+import csv
 
-# resultsName = "Start.txt"
+resultsName = "Start.txt"
 
-# with open("out.txt", "wt") as fout:
-#     with open("Start.txt", "rt") as fin:
-#         for line in fin:
-#             fout.write(line.replace('"', ''))
+with open("out.txt", "wt") as fout:
+    with open("Start.txt", "rt") as fin:
+        for line in fin:
+            fout.write(line.replace('"', ''))
 
 #!/usr/bin/env python2
 from __future__ import division
@@ -26,15 +26,15 @@ def simpson(f, a, b, n):
 print simpson(lambda x:x**9, 0.0, 10.0, 100000)
 
 
-# readcsv = open(resultsName,'rb')
-# reader = csv.reader(readcsv, delimiter= " ")
-# unique_test = set()
-# entries = []
-# for row in reader:
-# 	entries.append( row)
-# readcsv.close()
+readcsv = open(resultsName,'rb')
+reader = csv.reader(readcsv, delimiter= " ")
+unique_test = set()
+entries = []
+for row in reader:
+	entries.append( row)
+readcsv.close()
 
-# writecsv = open("results.csv",'wb')
-# writer = csv.writer(writecsv,delimiter=",")
-# writer.writerows(entries)
-# writecsv.close()
+writecsv = open("results.csv",'wb')
+writer = csv.writer(writecsv,delimiter=",")
+writer.writerows(entries)
+writecsv.close()
